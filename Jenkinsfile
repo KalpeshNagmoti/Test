@@ -24,6 +24,7 @@ pipeline{
                 }
 
             }
+          }
          stage ('Deployment Stage') {
 
             steps {
@@ -32,7 +33,7 @@ pipeline{
                     sh 'mvn deploy'
 
                 }
-
+			  }
             }
         }
     }
